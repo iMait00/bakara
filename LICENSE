@@ -1,0 +1,105 @@
+بَكرَة (Bakara) — رخصة ملكية خاصة
+Bakara — Proprietary Software License
+
+حقوق النشر © 2026 iMait00. جميع الحقوق محفوظة.
+Copyright © 2026 iMait00. All Rights Reserved.
+
+================================================================================
+العربية
+================================================================================
+
+بَكرَة برنامج مغلق المصدر. هذا المستودع يحتوي على نسخ تنفيذية جاهزة فقط، ولا
+يتضمن الكود المصدري. البرنامج بكامله — كوده وتصميمه وأيقوناته وواجهته ونصوصه —
+مملوك لصاحب حقوق النشر أعلاه ومحمي بموجب قوانين حقوق المؤلف والمعاهدات الدولية.
+
+١. حدود ما هو مسموح
+   يجوز لك تنزيل النسخة التنفيذية الرسمية من هذا المستودع وتثبيتها وتشغيلها
+   على أجهزتك الشخصية. لا يُمنح أي حق آخر، لا صراحةً ولا ضمناً.
+
+٢. الأفعال الممنوعة
+   يُمنع منعاً باتاً، بدون إذن كتابي مسبق من صاحب حقوق النشر:
+   (أ) بيع البرنامج أو تأجيره أو ترخيصه من الباطن أو المتاجرة به بأي صورة،
+       سواء بمقابل مادي أو بدونه؛
+   (ب) إعادة توزيعه أو نشره أو رفعه أو مشاركته أو إتاحته للعموم بأي وسيلة؛
+   (ج) تعديله أو اشتقاق أعمال منه أو دمجه في منتج آخر؛
+   (د) عكس هندسته أو تفكيكه أو فك ترجمته أو محاولة استخراج كوده المصدري؛
+   (هـ) إزالة أو تغيير أي إشعار بحقوق النشر أو الملكية أو أي علامة تعريفية؛
+   (و) استخدام اسم «بَكرَة» أو «Bakara» أو شعار التطبيق أو هويته البصرية.
+
+٣. إنهاء الترخيص
+   أي مخالفة لهذه الشروط تُنهي تلقائياً وفوراً الإذن الممنوح في البند الأول،
+   ويلتزم المخالف بإتلاف كل ما بحوزته من نسخ.
+
+٤. إخلاء المسؤولية
+   يُقدَّم البرنامج «كما هو» دون أي ضمان من أي نوع، صريح أو ضمني، بما في ذلك
+   ضمانات القابلية للتسويق أو الملاءمة لغرض معيّن أو عدم انتهاك حقوق الغير.
+   لا يتحمل صاحب حقوق النشر أي مسؤولية عن أي مطالبة أو ضرر أو التزام ناشئ عن
+   البرنامج أو استخدامه أو التعامل معه بأي شكل.
+
+٥. مسؤولية المحتوى
+   البرنامج أداة تقنية عامة. يتحمل المستخدم وحده كامل المسؤولية عن التزامه
+   بشروط خدمة المواقع التي يتعامل معها وبقوانين حقوق المؤلف السارية عليه.
+
+================================================================================
+ENGLISH
+================================================================================
+
+Bakara is closed-source software. This repository contains prebuilt executables
+only; it does not include source code. The software in its entirety — its code,
+design, icons, interface, and copy — is the property of the copyright holder
+named above and is protected by copyright law and international treaties.
+
+1. WHAT IS PERMITTED
+   You may download the official executable build from this repository and
+   install and run it on your own personal devices. No other right is granted,
+   whether express or implied.
+
+2. PROHIBITED ACTS
+   Without prior written permission from the copyright holder, the following
+   are strictly prohibited:
+   (a) selling, renting, sublicensing, or otherwise commercializing the
+       software, whether for consideration or free of charge;
+   (b) redistributing, publishing, uploading, sharing, or otherwise making it
+       available to the public by any means;
+   (c) modifying it, creating derivative works from it, or incorporating it
+       into another product;
+   (d) reverse engineering, decompiling, disassembling, or otherwise attempting
+       to derive its source code;
+   (e) removing or altering any copyright, proprietary, or identifying notice;
+   (f) using the name "بَكرَة" / "Bakara", the application logo, or its visual
+       identity.
+
+3. TERMINATION
+   Any breach of these terms automatically and immediately terminates the
+   permission granted in Section 1, and the violator must destroy all copies in
+   their possession.
+
+4. DISCLAIMER OF WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY
+   ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+5. CONTENT RESPONSIBILITY
+   The software is a general-purpose technical tool. The user alone is
+   responsible for complying with the terms of service of any site they use it
+   with, and with the copyright laws that apply to them.
+
+================================================================================
+أدوات خارجية / THIRD-PARTY TOOLS
+================================================================================
+
+لا تتضمن الإصدارات الرسمية أي أدوات خارجية. يقوم التطبيق بتنزيل yt-dlp و FFmpeg
+و aria2c من مصادرها الرسمية على جهاز المستخدم عند أول تشغيل. كل أداة تخضع
+لرخصتها الخاصة، ولا تشملها هذه الرخصة.
+
+The official builds bundle no third-party tool. The application downloads
+yt-dlp, FFmpeg, and aria2c from their official sources onto the user's machine
+on first run. Each tool remains subject to its own license and is not covered
+by this license.
+
+================================================================================
+
+للاستفسار عن التراخيص / Licensing inquiries:
+https://github.com/iMait00
