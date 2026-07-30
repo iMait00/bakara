@@ -8,9 +8,9 @@
 
 <br/>
 
-[![تحميل آخر إصدار](https://img.shields.io/github/v/release/iMait00/bakara?label=%D8%A2%D8%AE%D8%B1%20%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1&color=2ea043)](https://github.com/iMait00/bakara/releases/latest)
-[![التحميلات](https://img.shields.io/github/downloads/iMait00/bakara/total?label=%D8%A7%D9%84%D8%AA%D8%AD%D9%85%D9%8A%D9%84%D8%A7%D8%AA&color=blue)](https://github.com/iMait00/bakara/releases)
-![الرخصة](https://img.shields.io/badge/%D8%A7%D9%84%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D9%84%D9%83%D9%8A%D8%A9%20%D8%AE%D8%A7%D8%B5%D8%A9-red)
+[![Download latest version](https://img.shields.io/github/v/release/iMait00/bakara?label=%D8%A2%D8%AE%D8%B1%20%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1&color=2ea043)](https://github.com/iMait00/bakara/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/iMait00/bakara/total?label=%D8%A7%D9%84%D8%AA%D8%AD%D9%85%D9%8A%D9%84%D8%A7%D8%AA&color=blue)](https://github.com/iMait00/bakara/releases)
+![License](https://img.shields.io/badge/%D8%A7%D9%84%D8%B1%D8%AE%D8%B5%D8%A9-%D9%85%D9%84%D9%83%D9%8A%D8%A9%20%D8%AE%D8%A7%D8%B5%D8%A9-red)
 
 <br/>
 
