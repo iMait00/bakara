@@ -10,7 +10,7 @@
 
 ### [⬇️ حمّل آخر إصدار](https://github.com/iMait00/bakara/releases/latest)
 
-<img src="assets/screenshot.jpg" alt="واجهة تطبيق بَكرَة" width="820">
+<img src="assets/معاينة للتطبيق.jpg" alt="واجهة تطبيق بَكرَة" width="820">
 
 </div>
 
