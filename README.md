@@ -44,7 +44,6 @@
 
 > **macOS:** التطبيق غير موقّع بشهادة Apple — أول مرة افتحه بزر الفأرة الأيمن ← **Open** ثم أكّد.
 >
-> **مجلدات Google Drive:** تحتاج [Python](https://www.python.org/) 3.11+ مع `gdown` (`pip install gdown`). باقي المميزات تشتغل بدونه.
 
 ---
 
