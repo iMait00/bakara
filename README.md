@@ -2,7 +2,7 @@
 
 # بَكرَة
 
-**من الإيديتورز إلى الإيديتورز — مادة خام جاهزة للتايم لاين**
+**من ممنتج إلى الممنتجين — مادة خام جاهزة للتايم لاين**
 
 [![Release](https://img.shields.io/github/v/release/iMait00/bakara?label=release&color=2ea043)](https://github.com/iMait00/bakara/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/iMait00/bakara/total?label=downloads&color=blue)](https://github.com/iMait00/bakara/releases)
