@@ -1,0 +1,60 @@
+# Maintainer: gernata
+#
+# Staging copy. The AUR repository (ssh://aur@aur.archlinux.org/bakara.git) is
+# separate; `aur/update.sh` bumps this file and regenerates .SRCINFO, then it is
+# copied there and pushed. See CLAUDE.md §7.
+#
+# A repackaged binary, and named `bakara` rather than `bakara-bin` on purpose:
+# the source is not public, so no from-source package can exist for the plain
+# name to belong to. The AUR guideline reserves `-bin` for when one could.
+
+pkgname=bakara
+pkgver=0.15.0
+pkgrel=1
+pkgdesc="Arabic-first media downloader: save from social platforms, then convert, extract audio, remove music and compress"
+arch=('x86_64')
+url="https://github.com/iMait00/bakara"
+license=('LicenseRef-Proprietary')
+# libayatana-appindicator is loaded at runtime for the tray icon, so nothing
+# links against it and namcap will not suggest it — it is still required.
+#
+# ffmpeg is a dependency rather than something the app downloads: a package
+# install takes the tools its distribution packages from the package manager
+# (see `crate::packaging` in the source). yt-dlp, Deno and Python are still the
+# app's own, fetched into ~/.local/share/com.bakara.app/tools on first run —
+# yt-dlp because it is pinned to the nightly channel, Python because gdown is
+# pinned to a release Arch does not ship.
+depends=(
+  'cairo'
+  'dbus'
+  'ffmpeg'
+  'gcc-libs'
+  'gdk-pixbuf2'
+  'glib2'
+  'glibc'
+  'gtk3'
+  'hicolor-icon-theme'
+  'libayatana-appindicator'
+  'libsoup3'
+  'webkit2gtk-4.1'
+  'xdg-utils'
+)
+optdepends=(
+  'gallery-dl: image posts (Instagram carousels and the like)'
+  'aria2: fallback download engine when a transfer stalls'
+  'gst-plugins-good: notification sounds'
+)
+options=('!strip' '!debug')
+source_x86_64=(
+  "${pkgname}-${pkgver}.deb::https://github.com/iMait00/bakara/releases/download/v${pkgver}/Bakara_${pkgver}_amd64.deb"
+  "LICENSE-${pkgver}::https://raw.githubusercontent.com/iMait00/bakara/v${pkgver}/LICENSE"
+)
+sha256sums_x86_64=('b192b1e84c12cf4a4672eb81cbd6780e990d0b334beee445a71cfdb4e1971cec'
+                   '3586ed5f5058210498253385eb3553921e61b8924134a440168923e16d629ae7')
+
+package() {
+  # makepkg has already split the .deb (an ar archive) into its members.
+  bsdtar -xf "${srcdir}"/data.tar.* -C "${pkgdir}"
+
+  install -Dm644 "${srcdir}/LICENSE-${pkgver}" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}

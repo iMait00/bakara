@@ -38,12 +38,24 @@
 | Windows | `Bakara_x.y.z_x64-setup.exe` |
 | macOS (Apple Silicon) | `Bakara_x.y.z_aarch64.dmg` |
 | macOS (Intel) | `Bakara_x.y.z_x64.dmg` |
+| Linux | `Bakara_x.y.z_amd64.AppImage` (يحدّث نفسه) أو `.deb` أو `.rpm` |
+| Arch Linux | من مجلد [`arch`](arch) في هذا المستودع — الأوامر بالأسفل |
 
 كل الملفات في [صفحة الإصدارات](https://github.com/iMait00/bakara/releases/latest).
 
 **أول تشغيل:** التطبيق ينزّل أدواته بنفسه (yt-dlp و FFmpeg و Python و Deno) — خلّ الإنترنت شغّالاً وانتظر انتهاء التهيئة.
 
 > **macOS:** التطبيق غير موقّع بشهادة Apple — أول مرة افتحه بزر الفأرة الأيمن ← **Open** ثم أكّد.
+
+**Arch Linux:**
+
+```bash
+git clone https://github.com/iMait00/bakara && cd bakara/arch && makepkg -si
+```
+
+وللتحديث لاحقاً، من داخل المجلد نفسه: `git pull && makepkg -si`
+
+> **Linux:** نسخة الـ AppImage تحدّث نفسها من داخل التطبيق وتنزّل أدواتها كلها؛ نسخ `.deb` و`.rpm` و Arch تتحدّث عبر مدير الحزم، ويأتي FFmpeg معها من التوزيعة نفسها. أيقونة شريط المهام تحتاج سطح مكتب يدعم AppIndicator (على GNOME: إضافة AppIndicator). محرك التحميل الاحتياطي aria2 يُثبَّت من مدير حزم التوزيعة.
 
 ---
 
