@@ -1,0 +1,53 @@
+# Maintainer: gernata
+#
+# Staging copy. The AUR repository (ssh://aur@aur.archlinux.org/bakara.git) is
+# separate; `aur/update.sh` bumps this file and regenerates .SRCINFO, then it is
+# copied there and pushed. See CLAUDE.md §7.
+#
+# A repackaged binary, and named `bakara` rather than `bakara-bin` on purpose:
+# the source is not public, so no from-source package can exist for the plain
+# name to belong to. The AUR guideline reserves `-bin` for when one could.
+
+pkgname=bakara
+pkgver=0.15.0
+pkgrel=1
+pkgdesc="Arabic-first media downloader: save from social platforms, then convert, extract audio, remove music and compress"
+arch=('x86_64')
+url="https://github.com/iMait00/bakara"
+license=('LicenseRef-Proprietary')
+# libayatana-appindicator is loaded at runtime for the tray icon, so nothing
+# links against it and namcap will not suggest it — it is still required.
+depends=(
+  'cairo'
+  'dbus'
+  'ffmpeg'
+  'gcc-libs'
+  'gdk-pixbuf2'
+  'glib2'
+  'glibc'
+  'gtk3'
+  'hicolor-icon-theme'
+  'libayatana-appindicator'
+  'libsoup3'
+  'webkit2gtk-4.1'
+  'xdg-utils'
+)
+optdepends=(
+  'gallery-dl: image posts'
+  'aria2: fallback when a transfer stalls'
+  'gst-plugins-good: notification sounds'
+)
+options=('!strip' '!debug')
+source_x86_64=(
+  "${pkgname}-${pkgver}.deb::https://github.com/iMait00/bakara/releases/download/v${pkgver}/Bakara_${pkgver}_amd64.deb"
+  "LICENSE-${pkgver}::https://raw.githubusercontent.com/iMait00/bakara/v${pkgver}/LICENSE"
+)
+sha256sums_x86_64=('b192b1e84c12cf4a4672eb81cbd6780e990d0b334beee445a71cfdb4e1971cec'
+                   'd4700c8c2bd791827cda9236cbaea2eb80f3fceb77f827c0113917078aaffc5d')
+
+package() {
+  # makepkg has already split the .deb (an ar archive) into its members.
+  bsdtar -xf "${srcdir}"/data.tar.* -C "${pkgdir}"
+
+  install -Dm644 "${srcdir}/LICENSE-${pkgver}" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
