@@ -1,6 +1,6 @@
 pkgbase = bakara
 	pkgdesc = Arabic-first media downloader: save from social platforms, then convert, extract audio, remove music and compress
-	pkgver = 0.15.0
+	pkgver = 0.16.1
 	pkgrel = 1
 	url = https://github.com/iMait00/bakara
 	arch = x86_64
@@ -23,9 +23,9 @@ pkgbase = bakara
 	optdepends = gst-plugins-good: notification sounds
 	options = !strip
 	options = !debug
-	source_x86_64 = bakara-0.15.0.deb::https://github.com/iMait00/bakara/releases/download/v0.15.0/Bakara_0.15.0_amd64.deb
-	source_x86_64 = LICENSE-0.15.0::https://raw.githubusercontent.com/iMait00/bakara/v0.15.0/LICENSE
-	sha256sums_x86_64 = b192b1e84c12cf4a4672eb81cbd6780e990d0b334beee445a71cfdb4e1971cec
+	source_x86_64 = bakara-0.16.1.deb::https://github.com/iMait00/bakara/releases/download/v0.16.1/Bakara_0.16.1_amd64.deb
+	source_x86_64 = LICENSE-0.16.1::https://raw.githubusercontent.com/iMait00/bakara/v0.16.1/LICENSE
+	sha256sums_x86_64 = b91b09ff531105f0250c96006d9ed7bfbefdc0f0ecdf88c708acdc569454dd29
 	sha256sums_x86_64 = d4700c8c2bd791827cda9236cbaea2eb80f3fceb77f827c0113917078aaffc5d
 
 pkgname = bakara

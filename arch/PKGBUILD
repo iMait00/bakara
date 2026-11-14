@@ -9,7 +9,7 @@
 # name to belong to. The AUR guideline reserves `-bin` for when one could.
 
 pkgname=bakara
-pkgver=0.15.0
+pkgver=0.16.1
 pkgrel=1
 pkgdesc="Arabic-first media downloader: save from social platforms, then convert, extract audio, remove music and compress"
 arch=('x86_64')
@@ -42,7 +42,7 @@ source_x86_64=(
   "${pkgname}-${pkgver}.deb::https://github.com/iMait00/bakara/releases/download/v${pkgver}/Bakara_${pkgver}_amd64.deb"
   "LICENSE-${pkgver}::https://raw.githubusercontent.com/iMait00/bakara/v${pkgver}/LICENSE"
 )
-sha256sums_x86_64=('b192b1e84c12cf4a4672eb81cbd6780e990d0b334beee445a71cfdb4e1971cec'
+sha256sums_x86_64=('b91b09ff531105f0250c96006d9ed7bfbefdc0f0ecdf88c708acdc569454dd29'
                    'd4700c8c2bd791827cda9236cbaea2eb80f3fceb77f827c0113917078aaffc5d')
 
 package() {
