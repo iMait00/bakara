@@ -1,6 +1,6 @@
 pkgbase = bakara
 	pkgdesc = Arabic-first media downloader: save from social platforms, then convert, extract audio, remove music and compress
-	pkgver = 0.16.1
+	pkgver = 0.16.3
 	pkgrel = 1
 	url = https://github.com/iMait00/bakara
 	arch = x86_64
@@ -18,14 +18,14 @@ pkgbase = bakara
 	depends = libsoup3
 	depends = webkit2gtk-4.1
 	depends = xdg-utils
-	optdepends = gallery-dl: image posts
-	optdepends = aria2: fallback when a transfer stalls
+	optdepends = gallery-dl: image posts (Instagram carousels and the like)
+	optdepends = aria2: fallback download engine when a transfer stalls
 	optdepends = gst-plugins-good: notification sounds
 	options = !strip
 	options = !debug
-	source_x86_64 = bakara-0.16.1.deb::https://github.com/iMait00/bakara/releases/download/v0.16.1/Bakara_0.16.1_amd64.deb
-	source_x86_64 = LICENSE-0.16.1::https://raw.githubusercontent.com/iMait00/bakara/v0.16.1/LICENSE
-	sha256sums_x86_64 = b91b09ff531105f0250c96006d9ed7bfbefdc0f0ecdf88c708acdc569454dd29
+	source_x86_64 = bakara-0.16.3.deb::https://github.com/iMait00/bakara/releases/download/v0.16.3/Bakara_0.16.3_amd64.deb
+	source_x86_64 = LICENSE-0.16.3::https://raw.githubusercontent.com/iMait00/bakara/v0.16.3/LICENSE
+	sha256sums_x86_64 = 656435376fd054150c970a0d5ed7d8cdcfef5ac8d533faae2765b0afa54a7b28
 	sha256sums_x86_64 = d4700c8c2bd791827cda9236cbaea2eb80f3fceb77f827c0113917078aaffc5d
 
 pkgname = bakara
